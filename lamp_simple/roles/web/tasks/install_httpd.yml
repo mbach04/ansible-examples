@@ -10,6 +10,7 @@
    - git
    - libsemanage-python
    - libselinux-python
+   - iptables
 
 - name: insert iptables rule for httpd
   lineinfile: dest=/etc/sysconfig/iptables create=yes state=present regexp="{{ httpd_port }}" insertafter="^:OUTPUT "
