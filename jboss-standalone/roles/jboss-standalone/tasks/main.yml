@@ -11,10 +11,6 @@
    - libselinux-python
    - libsemanage-python
 
-- name: Install boto3
-  - pip:
-      name: boto3
-
 - name: Download JBoss from jboss.org
   get_url: 
     url: http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip 
